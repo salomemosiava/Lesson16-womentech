@@ -1,0 +1,104 @@
+#div {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 60px;
+    list-style: none;
+}
+
+li {
+    opacity: 70%;
+    text-align: center;
+    background-color: #ffe54c;
+    font-family: 'Baloo Bhai 2';
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+li:hover {
+    opacity: 100%;
+    background-color: #4c94ff;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+img {
+    height: 150px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.button {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#loadprev {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 13px 20px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(141, 255, 10, 0);
+    margin-right: 30px;
+}
+
+#loadprev:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+#loadprev:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+
+#loadmore {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 13px 20px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(141, 255, 10, 0);
+    margin-right: 50px;
+}
+
+#loadmore:after {
+    content: "";
+    background-color: #4c94ff;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+#loadmore:hover::after {
+    top: 0px;
+    left: 0px;
+}
